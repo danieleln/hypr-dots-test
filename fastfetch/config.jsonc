@@ -1,0 +1,126 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+
+  "display": {
+    // Max length of the "key" field
+    "key": {
+      "width": 6
+    },
+    // Separator character between the "key" field and the value of the property
+    "separator": " ",
+
+    // Removes percentages color highlighting
+    "percent": {
+      "type": 0,
+    }
+  },
+
+  "modules": [
+    // Whoami
+    "title",
+    "break",
+
+    // Software Infos
+    {
+      "type": "custom",
+      "format": "╭Software",
+      "outputColor": "yellow",
+    },
+    {
+      "type": "kernel",
+      "key": "│ │",
+      "keyColor": "yellow"
+    },
+    {
+      // Operating System
+      "type": "os",
+      "key": "│ │",
+      "keyColor": "yellow"
+    },
+    {
+      // Desktop Environment
+      "type": "de",
+      "key": "│ │",
+      "keyColor": "yellow"
+    },
+    {
+      "type": "shell",
+      "key": "│ │",
+      "keyColor": "yellow"
+    },
+    {
+      "type": "custom",
+      "format": "╰──╯",
+      "outputColor": "yellow",
+    },
+    "break",
+
+    // Hardware Infos
+    {
+      "type": "custom",
+      "format": "╭Hardware",
+      "outputColor": "green",
+    },
+    {
+      "type": "cpu",
+      "key": "│ │", //󰻠
+      "format": "{1}",
+      "keyColor": "green"
+    },
+    {
+      "type": "gpu",
+      "hideType": "integrated",
+      "key": "│󰢮 │",
+      "format": "{1} {2}",
+      "keyColor": "green",
+    },
+    {
+      "type": "display",
+      "key": "│󰹑 │",
+      "format": "{1}x{2} @ {3}Hz",
+      "keyColor": "green"
+    },
+    {
+      "type": "disk",
+      "key": "│ │",
+      "format": "{3} of {2}",
+      "keyColor": "green"
+    },
+    {
+      "type": "memory",
+      "key": "│ │",
+      "format": "{3} of {2}",
+      "keyColor": "green"
+    },
+    {
+      "type": "battery",
+      "key": "│ │",
+      "format": "{4} {5}",
+      "keyColor": "green"
+    },
+    {
+      "type": "custom",
+      "format": "╰──╯",
+      "outputColor": "green",
+    },
+    "break",
+
+    // Colors
+    {
+      "type": "custom",
+      "format": "╭Colors",
+      "outputColor": "blue",
+    },
+    {
+      "type": "colors",
+      "key": "│ │",
+      "symbol": "circle",
+      "keyColor": "blue",
+    },
+    {
+      "type": "custom",
+      "format": "╰──╯",
+      "outputColor": "blue",
+    },
+  ]
+}

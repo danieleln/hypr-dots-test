@@ -1,0 +1,7 @@
+fish/fish_variables
+fish/config.fish
+
+btop/btop.log
+btop/themes/*
+
+nvim/lazy-lock.json
